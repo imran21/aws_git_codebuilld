@@ -20,7 +20,7 @@ phases:
     commands:
       - echo Entered the build phase...
       - echo Build started on `date`
-      - service httpd start
+      - service apache2 start
     finally:
       - echo This always runs even if the install command fails
   post_build:
